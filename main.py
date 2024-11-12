@@ -48,11 +48,11 @@ bot = Client("bot",
    api_hash= "d97919fb0a3c725e8bb2a25bbb37d57c"
 )
 
-@bot.on_message(filters.command(["start"]))    
+@bot.on_message(filters.command(["Started"]))    
 async def account_login(bot: Client, m: Message):    
-    editable = await m.reply_text("**👋 ʜᴇʟʟᴏ!\n\n🌟ɪ ᴀᴍ ᴛxᴛ ꜰɪʟᴇ ᴅᴏᴡʟᴏᴀᴅᴇʀ ʙᴏᴛ** \n\n<pre>💗 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : 𝗢𝗺𝗞𝗮𝗥</pre>\n-═════━‧₊˚❀༉‧₊˚.━═════-") 
+    editable = await m.reply_text("**👋 ʜᴇʟʟᴏ!\n\n🌟ɪ ᴀᴍ ᴛxᴛ ꜰɪʟᴇ ᴅᴏᴡʟᴏᴀᴅᴇʀ ʙᴏᴛ** \n\n<pre>💗 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : Captain Alex ❤️</pre>\n-═════━‧₊˚❀༉‧₊˚.━═════-") 
 
-@bot.on_message(filters.command("Stop"))    
+@bot.on_message(filters.command("Ruko"))    
 async def restart_handler(_, m):    
     await m.reply_text("**🚯 ꜱᴛᴏᴘᴘᴇᴅ 🚯**", True)    
     os.execl(sys.executable, sys.executable, *sys.argv)
@@ -80,7 +80,7 @@ async def download_pdf(url, filename):
         raise
 
 
-@bot.on_message(filters.command(["scammer"]))    
+@bot.on_message(filters.command(["Ak47"]))    
 async def account_login(bot: Client, m: Message):    
     editable = await m.reply_text('**-═════━‧₊˚❀༉‧₊˚.━═════-\n📝 ꜱᴇɴᴅ ᴛxᴛ ꜰɪʟᴇ ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ**\n-═════━‧₊˚❀༉‧₊˚.━═════-')
     input: Message = await bot.listen(editable.chat.id)
@@ -283,7 +283,7 @@ async def account_login(bot: Client, m: Message):
                         continue
                      
                 else:
-                    Show = f"**⚡Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ....**\n\n**📚❰Name❱** `{name}\n🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}`\n🌿**Url**» ᴘᴀᴅʜᴀɪ ᴋᴀʀ ʟᴇ ʙʀᴏ🧐\n\n **ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ [𝗢𝗺𝗞𝗮𝗥™]**\n**═════━‧₊˚❀༉‧₊˚.━═════ **"    
+                    Show = f"**⚡Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ....**\n\n**📚❰Name❱** `{name}\n🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}`\n🌿**Url**» ᴘᴀᴅʜᴀɪ ᴋᴀʀ ʟᴇ ʙʀᴏ🧐\n\n **ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ [CAPTION™]**\n**═════━‧₊˚❀༉‧₊˚.━═════ **"    
                     prog = await m.reply_text(Show)    
                     res_file = await helper.download_video(url, cmd, name)    
                     filename = res_file    
@@ -295,7 +295,7 @@ async def account_login(bot: Client, m: Message):
                     
             except Exception as e:
                 await m.reply_text(
-                    f"**downloading failed [ᴏᴍᴋᴀʀ™]**\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`\n\n═════━‧₊˚❀༉‧₊˚.━═════"
+                    f"**downloading failed [CAPTION™]**\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`\n\n═════━‧₊˚❀༉‧₊˚.━═════"
                     )
                 
     except Exception as e:
